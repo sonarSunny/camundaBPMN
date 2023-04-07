@@ -28,7 +28,5 @@ jobs:
       with:
         url: "http://localhost:5000/api/v1"
         method: 'GET'
-    - name: Show Response
-      run: |
-        echo ${{ steps.myRequest.outputs.response }}
-        echo ${{"Sunny"}}
+    - name: Main Request
+      run: curl -vvvv  http://localhost:5000/api/v1
