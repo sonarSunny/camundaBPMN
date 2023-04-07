@@ -24,6 +24,6 @@ jobs:
     steps:
       - name: Make Request
         id: myRequest
-        uses: fjogeleit/http-request-action@v1
         with:
           url: "http://localhost:5000/api/v1"
+          method: GET
