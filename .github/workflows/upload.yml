@@ -22,8 +22,8 @@ jobs:
     container: ubuntu
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Make Request
-        id: myRequest
-        with:
-          url: "http://localhost:5000/api/v1"
-          method: GET
+    - name: Deploy Stage
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://localhost:5000/api/v1'
+        method: 'GET'
