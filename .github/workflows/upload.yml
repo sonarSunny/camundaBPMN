@@ -31,3 +31,4 @@ jobs:
     - name: Show Response
       run: |
         echo ${{ steps.myRequest.outputs.response }}
+        echo ${{"Sunny"}}
